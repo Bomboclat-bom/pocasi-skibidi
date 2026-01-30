@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Předpověď počasí</title>
+    <title>Počasí Skibidi</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <div class="card">
         <div class="search">
-            <input type="text" class="search-bar" placeholder="Zadejte město (např. Praha)">
-            <button class="search-btn">
-                🔍
-            </button>
+            <input type="text" class="search-bar" placeholder="Hledat město (např. Praha)">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
         </div>
         
         <div class="weather loading">
-            <h2 class="city">Počasí ve městě</h2>
+            <h2 class="city">Zadejte město...</h2>
+            <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="icon" class="icon" />
             <h1 class="temp">--°C</h1>
-            <div class="flex">
-                <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon" />
-                <div class="description">Popis</div>
+            <div class="description">--</div>
+            
+            <div class="details">
+                <div class="col">
+                    <i class="fas fa-tint"></i>
+                    <div>
+                        <p class="humidity-val">--%</p>
+                        <p>Vlhkost</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fas fa-wind"></i>
+                    <div>
+                        <p class="wind-val">-- km/h</p>
+                        <p>Vítr</p>
+                    </div>
+                </div>
             </div>
-            <div class="humidity">Vlhkost: --%</div>
-            <div class="wind">Vítr: -- km/h</div>
         </div>
     </div>
 
