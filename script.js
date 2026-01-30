@@ -48,3 +48,4 @@ document.querySelector(".search-bar").addEventListener("keyup", (event) => {
         weather.search();
     }
 });
+
