@@ -1,5 +1,5 @@
 let weather = {
-    apiKey: "VLOŽTE_ZDE_SVŮJ_API_KLÍČ", // Sem vložte váš klíč z OpenWeatherMap
+    apiKey: "25572e41a479b54b043a0d29aad205d9", // Sem vložte váš klíč z OpenWeatherMap
     
     fetchWeather: function (city) {
         fetch(
@@ -49,4 +49,5 @@ document.querySelector(".search-bar").addEventListener("keyup", function (event)
     if (event.key == "Enter") {
         weather.search();
     }
+
 });
