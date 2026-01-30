@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Předpověď počasí</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="card">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Zadejte město (např. Praha)">
+            <button class="search-btn">
+                🔍
+            </button>
+        </div>
+        
+        <div class="weather loading">
+            <h2 class="city">Počasí ve městě</h2>
+            <h1 class="temp">--°C</h1>
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon" />
+                <div class="description">Popis</div>
+            </div>
+            <div class="humidity">Vlhkost: --%</div>
+            <div class="wind">Vítr: -- km/h</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
